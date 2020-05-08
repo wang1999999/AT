@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />        
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+		<title>Automated Code Testing</title>
+        
+        
+        <link rel="stylesheet" href="css/codemirror.css">
+        <link rel="stylesheet" href="css/show-hint.css">
+        <link rel="stylesheet" href="css/theme/eclipse.css">
+        <link rel="stylesheet" href="css/foldgutter.css">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico" rel="stylesheet">
+        <link rel="stylesheet" href="css/pageStyle.css">
+
+    </head>
+    
+    
+    <body>
+       <!-- Navigationbar -->
+       <nav class="navbar navbar-static-top">
+       	<div class="container-fluid">
+       	
+       		<!-- Navigationbar header --> 
+        	<div class="navbar-header">
+       			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1">
+       				<span class="sr-only">Toggle navigation</span>
+       			</button>
+       			<h4 class="navbar-header col-xs-4" style="font-family: lobster">Automated Testing</h4>
+       		</div>
+       		<!-- Navigationbar header collapse -->
+       		
+       		<!-- Navigationbar buttons -->
+        	<div class="collapse navbar-collapse" id="defaultNavbar1">
+        		<ul class="nav navbar-nav">
+         			<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+         			<li><a href="#">Info</a></li>
+       			</ul>
+       			<form class="navbar-form navbar-left" role="search">
+         			<div class="form-group">
+          				<input type="text" class="form-control" placeholder="Search">
+         			</div>
+         			<button type="submit" class="btn btn-primary">Submit</button>
+       			</form>
+       			<ul class="nav navbar-nav navbar-right">
+         			<li><a href="#">About</a></li>
+       			</ul>
+        	</div> 
+        	<!-- Navigationbar buttons collapse -->
+        	
+       	</div> 
+       </nav>
+       <!-- Navigationbar collapse -->
+       
+       <!-- Main page -->
+       <div class="container-fluid">
+       
+        <!-- Main header -->
+        <div class="row">
+        	<div class="col-md-6 col-md-offset-3">
+          		<h1 class="text-center" style="font-family: lobster">Automated Testing</h1>
+          		<h4 class="text-center">Your Code Testing Assistance</h4>
+        	</div>
+        </div>
+        <!-- Main header collapse -->
+        
+        <hr> <!-- Dividing line -->
+        
+        <div class="row">
+            <!-- Code textarea -->
+            <div class="col-md-6">
+                <div class="well" id="left-well" style="height: auto">
+                    <div class="form-group">
+                        <label>The number of the parameters your function contains: </label>
+                    	<input type="text" id="number-of-parameters">
+                    	<button class="btn-success" onClick="getNumberOfParameters()">OK</button>
+                    </div>
+                    <div class="form-group" id="range-of-parameters"></div>
+                    <hr>
+                    <div>
+                    	<label>Enter your code here:</label>
+                    	<textarea id="code"></textarea>
+                    	<button class="TestButton" onClick="ajaxRequest()">Test</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Code textarea -->
+            
+            <!-- Information display -->
+            <div class="col-md-6">
+            	<div class="well" id="right-well">
+            		<h5 class="text-center">Information:</h5>
+            		<pre id="output-content" style="height: 258px"></pre>
+            		<div class="well" id="img-well" style="height: 238px"></div>
+            	</div>
+            </div>
+            <!-- Information display collapse -->
+            
+        </div>
+        <hr>
+        
+        <!-- Page tail -->
+        <div class="row">
+            <div class="text-center col-md-6 col-md-offset-3">
+                <h4>The BugKiller Group </h4>
+                <p>Copyright &copy; 2018 &middot; All Rights Reserved &middot; <a href="#" >BK</a></p>
+            </div>
+        </div>
+        <!-- Page tail collapse -->
+        
+        <hr> <!-- Dividing line -->
+        
+       </div>
+       <!-- Main page collapse -->
+
+      
+       <!--Javascripts references -->
+       <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+       <script src="js/codemirror.js"></script>
+       <script src="js/clike.js"></script>
+       <script src="js/fold/brace-fold.js"></script>
+       <script src="js/fold/comment-fold.js"></script>
+       <script src="js/fold/foldcode.js"></script>
+       <script src="js/fold/foldgutter.js"></script>
+       <script src="js/active-line.js"></script>
+       <script src="js/show-hint.js"></script>
+       <script src="js/anyword-hint.js"></script>
+       <script src="js/ajax.js"></script>
+       <!-- Javascripts references collapse -->
+       
+    </body>
+</html>
